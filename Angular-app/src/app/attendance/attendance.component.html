@@ -1,0 +1,23 @@
+<h2>Userul actual este {{actual_user}}.
+  <br>
+  <button  routerLink="/directory">Inapoi la pagina principala</button>
+  <br>
+
+<div class="row">
+    <div class="column">
+        <h1>Cursuri</h1>
+        <ul>
+          <li *ngFor="let curs of cursuri">
+              <button  color="primary" (click)="attendance_c(curs.id,curs.dates[l1-1].hour,curs.dates[l1-1].day)">{{ curs.name }}</button>
+          </li>
+        </ul>
+    </div>
+    <div class="column">
+        <h1>Laboratoare</h1>
+        <ul>
+          <li *ngFor="let lab of laboratoare">
+              <button  color="primary" (click)="attendance_l(lab.id,lab.dates[l2-1].hour,lab.dates[l2-1].day)">{{ lab.name }}</button>
+          </li>
+        </ul>
+    </div>
+  </div>

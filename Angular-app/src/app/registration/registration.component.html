@@ -1,0 +1,14 @@
+<h2>Inregistrare</h2>
+<br>
+<button  routerLink="/login">Inapoi</button><br>
+<br><br>
+<form id="add-user">
+    <label>name</label><input type="text"[(ngModel)]="name" name=first/><br>
+    <label>username</label><input type="text"[(ngModel)]="username"name=sec/><br>
+    <label>surname</label><input type="text"[(ngModel)]="surname"name=third/><br>
+    <label>email</label><input type="text"[(ngModel)]="email"name=fourth/><br>
+    <label>password</label><input type="text"[(ngModel)]="password"name=fifth/><br>
+    <label>id</label><input type="text"[(ngModel)]="id"name=sixth/><br>
+    <label>attendance</label> <input type="text"[(ngModel)]="attendance"name=seventh/><br>
+    <label>Apasa-l!</label> <button (click)="functie(name,username,surname,email,password,id,attendance)">Add User</button><br>
+</form>

@@ -1,0 +1,16 @@
+<h1>Datele studentului</h1>
+<div>
+  
+    <ul *ngFor="let hero of userii">
+        <p *ngIf="hero.username ==actual_user_2">
+        <br><label>Nume:</label> {{hero.name}}
+        <br><label>Prenume:</label> {{hero.surname}}
+        <br><label>Username:</label> {{hero.username}}
+       <br> <label>Parola:</label> {{hero.password}}
+        <br><label>Id:</label> {{hero.id}}
+       <br> <label>Attendance:</label> {{hero.attendance}}
+    </p>
+  </ul>
+  <button  routerLink="/directory">Inapoi la pagina principala</button>
+</div>
+
